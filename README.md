@@ -44,7 +44,7 @@ pcaps:
 
 I don't think --exec or interactive matter too much for detection part. 
 
-from exploit code, these ports and domain being used can always be modified:
+from exploit code, these ports and domain being used can always be modified (alongside with many other things like file names etc obv...):
 ```
     attacker_host = "127.0.0.1.%s.sslip.io" % args.attacker_ip.replace(".", "-")
     token_port, carrier_port, lport = 8952, 8933, 9001
@@ -57,3 +57,20 @@ Screenshots:
 Process tree (of me running sleep via interactive rev shell)
 
 <img width="686" height="64" alt="image" src="https://github.com/user-attachments/assets/15489fcf-27da-47d2-ba4c-abc1fe832397" />
+
+
+Screenshots from wireshark:
+
+<img width="989" height="363" alt="image" src="https://github.com/user-attachments/assets/356f3944-f7fa-4bc3-aa70-e8ff26006bd8" />
+
+<img width="985" height="535" alt="image" src="https://github.com/user-attachments/assets/afc51824-dd03-4ec9-a7a4-e28a94b4b501" />
+
+<img width="985" height="316" alt="image" src="https://github.com/user-attachments/assets/17a6450b-306e-49bc-8714-740ea428829d" />
+
+<img width="985" height="389" alt="image" src="https://github.com/user-attachments/assets/5ea28d27-59c9-4341-ba00-ccf130cbbfe6" />
+
+<img width="985" height="588" alt="image" src="https://github.com/user-attachments/assets/4c5075ea-dc09-4aee-b82c-4a2463a87b62" />
+
+<img width="985" height="671" alt="image" src="https://github.com/user-attachments/assets/fd2db76f-b271-48c7-834b-29c814142081" />
+
+
