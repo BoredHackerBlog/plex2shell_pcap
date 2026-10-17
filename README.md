@@ -44,6 +44,14 @@ pcaps:
 
 I don't think --exec or interactive matter too much for detection part. 
 
+from exploit code, these ports and domain being used can always be modified:
+```
+    attacker_host = "127.0.0.1.%s.sslip.io" % args.attacker_ip.replace(".", "-")
+    token_port, carrier_port, lport = 8952, 8933, 9001
+```
+
+Screenshots:
+
 <img width="1408" height="575" alt="image" src="https://github.com/user-attachments/assets/668a4acf-e548-440a-890e-6edb40ee87e6" />
 
 Process tree (of me running sleep via interactive rev shell)
