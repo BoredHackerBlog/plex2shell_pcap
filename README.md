@@ -5,6 +5,12 @@ pcap artifacts for plex2shell exploitation
 
 Info: https://zmain.info/blog/plex2shell
 
+Associated CVEs:
+- CVE-2026-96652
+- CVE-2026-96654
+- CVE-2026-96655
+- CVE-2026-96656
+
 Exploit/POC: https://github.com/code-zm/plex2shell
 
 Target: Docker image: linuxserver/plex:1.42.2 10.98.178.40
@@ -30,6 +36,13 @@ services:
       - ./movies:/movies
     restart: unless-stopped
 ```
+
+pcaps:
+- plex2shell_lab_filtered.pcap - interactive rev shell
+- plex2shell_lab_one_shot_filtered.pcap - one shot id and hostname i think
+- plex2shell_lab_one_shot_2_filtered.pcap - one shot id, hostname, and cat passwd iirc
+
+I don't think --exec or interactive matter too much for detection part. 
 
 <img width="1408" height="575" alt="image" src="https://github.com/user-attachments/assets/668a4acf-e548-440a-890e-6edb40ee87e6" />
 
