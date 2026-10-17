@@ -3,6 +3,8 @@ pcap artifacts for plex2shell exploitation
 
 ## As of Oct 17th, 2026, this is being exploited in the wild but pcaps with name containing "lab" are from lab testing!!
 
+regarding in the wild exploitation: https://www.boredhackerblog.info/2026/10/plex-vulnerabilities-being-exploited-in.html
+
 Info: https://zmain.info/blog/plex2shell
 
 Associated CVEs:
